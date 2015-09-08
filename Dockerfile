@@ -1,9 +1,6 @@
 FROM       hasufell/gentoo-amd64-paludis:latest
 MAINTAINER Julian Ospald <hasufell@gentoo.org>
 
-# more jobs
-RUN echo -e "\nMAKEOPTS=\"-j8\"" >> /etc/paludis/bashrc
-
 # global flags
 RUN echo -e "*/* acl bash-completion ipv6 kmod openrc pcre readline unicode \
 zlib pam ssl sasl bzip2 urandom crypt tcpd java \
