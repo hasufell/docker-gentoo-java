@@ -8,7 +8,7 @@ MAINTAINER Julian Ospald <hasufell@gentoo.org>
 COPY ./config/paludis /etc/paludis
 
 # install java set
-COPY jdk-8u66-linux-x64.tar.gz /usr/portage/distfiles/
+COPY jdk-8u72-linux-x64.tar.gz /usr/portage/distfiles/
 RUN chgrp paludisbuild /dev/tty && cave resolve -c java \
 	-F dev-java/oracle-jdk-bin -x
 
